@@ -5,11 +5,11 @@ from send_mail import send_mail
 
 app = Flask(__name__)
 
-ENV = 'prod'
+ENV = 'dev'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:{PASSWORD}@localhost/Snake'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 else:
     app.debug = False
     app.config['SQLALCHEMY_DATABASE_URI'] = ''

@@ -8,8 +8,8 @@ def send_mail(customer, game, rating, comments):
     login = '77ac2eab5e4f57'
     password = '4f5250fa72a52e'
     message = f"<h3>Welcome {customer.capitalize()} </h3><ul><li>Customer: {customer}</li><li>Dealer: {game}</li><li>Rating: {rating}</li><li>Comments: {comments}</li></ul>   "
-    sender_email = 'hyvirusper@gmail.com'
-    receiver_email = 'ridwanmohamedco@outlook.com'
+    sender_email = '{email}'
+    receiver_email = '{email}'
     msg = MIMEText(message, 'html')
     msg['Subject'] = 'Snake Feedback'
     msg['From'] = sender_email
